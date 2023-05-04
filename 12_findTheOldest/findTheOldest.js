@@ -22,13 +22,13 @@ const findTheOldest = function(people) {
 
 
 function findMax(people, ageList){
-    let max = 0;
+    let oldestIndex = 0;
     
     for (let i = 1; i < ageList.length; i++){
-        if (ageList[i] > ageList[max])
-            max = i;
+        if (ageList[i] > ageList[oldestIndex])
+            oldestIndex = i;
     }
-    return people[max];
+    return people[oldestIndex];
 }
 
 // Do not edit below this line
